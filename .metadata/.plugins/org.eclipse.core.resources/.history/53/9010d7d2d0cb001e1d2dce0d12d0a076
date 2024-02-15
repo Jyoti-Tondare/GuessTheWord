@@ -1,0 +1,39 @@
+import java.util.Random;
+
+public class Words {
+
+	private String[] randomWords={"Animals","happiness","indefinite","Steady","birthday","Extreame","rights",
+			"properties","ceremony","independence","beneath","information","Students","Exployed"};
+	
+	private String selectedWord;
+    Random random=new Random();
+    char[] letters;
+	
+	public Words() {
+		selectedWord=randomWords[random.nextInt(randomWords.length)];
+		letters=new char[selectedWord.length()];
+	}
+	public String toString() {
+//		String word="";
+//		letters[2]='a';
+		
+		StringBuilder text=new StringBuilder();
+		
+		
+		for(char letter:letters) {
+			text.append(letter=='\u0000'?'-':letter);
+//			if(letter=='\u0000') {
+////				word+='-';
+//				text.append('-');
+//			}else {
+////				word+=letter;
+//				text.append(letter);
+//			}
+//			word+=' ';
+			text.append(' ');
+		}
+		
+//		return word;
+		return text.toString();
+	}
+}

@@ -1,0 +1,10 @@
+
+public class Words {
+
+	private String[] randomWords={"Animals","happiness","indefinite","Steady","birthday","Extreame","rights",
+			"properties","ceremony","independence","beneath","information","Students","Exployed"};
+	
+	public String toString() {
+		return randomWords[1];
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class Words {
+
+	private String[] randomWords={"Animals","happiness","indefinite","Steady","birthday","Extreame","rights",
+			"properties","ceremony","independence","beneath","information","Students","Exployed"};
+	
+	private String selectedWord;
+    Random random=new Random();
+	
+	public Words() {
+		selectedWord=randomWords[random.nextInt(randomWords.length)];
+	}
+	public String toString() {
+		return selectedWord;
+	}
+}

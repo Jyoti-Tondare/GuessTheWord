@@ -1,0 +1,34 @@
+
+public class GuessTheWord {
+
+	public void start() {
+		// TODO Auto-generated method stub
+		boolean play=true;
+	    Words randomWords=new Words();
+		do {
+			
+			showWord();
+			getInput();
+			checkInput();
+			
+		}while(play);
+	}
+
+
+	private void showWord() {
+		char[] randomWords;
+		// TODO Auto-generated method stub
+		System.out.println(randomWords);
+		
+	}
+
+	private void getInput() {
+		// TODO Auto-generated method stub
+		
+	}
+	private void checkInput() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

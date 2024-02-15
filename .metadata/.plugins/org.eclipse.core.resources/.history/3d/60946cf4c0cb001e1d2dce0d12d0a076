@@ -1,0 +1,31 @@
+
+public class GuessTheWord {
+
+	public void start() {
+		// TODO Auto-generated method stub
+		boolean play=true;
+		do {
+			
+			showWord();
+			getInput();
+			checkInput();
+			
+		}while(play);
+	}
+
+
+	private void showWord() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void getInput() {
+		// TODO Auto-generated method stub
+		
+	}
+	private void checkInput() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

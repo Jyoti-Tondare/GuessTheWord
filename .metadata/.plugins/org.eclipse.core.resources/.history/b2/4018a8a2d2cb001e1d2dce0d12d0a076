@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class GuessTheWord {
+
+	public void start() {
+		// TODO Auto-generated method stub
+		boolean play=false;
+	    Words randomWord=new Words();
+	    Scanner sc=new Scanner(System.in);
+		do {
+			
+			showWord(randomWord);
+			getInput(randomWord);
+			checkInput();
+			
+		}while(play);
+	}
+
+
+	 void showWord(Words randomWord) {
+		// TODO Auto-generated method stub
+		System.out.println(randomWord);
+		
+	}
+
+	 void getInput(Words randomWord) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter a letter to guess the word");
+		String userGuess=sc.nextLine();
+		
+		char letter;
+		
+		randomWord.guess(letter);
+		
+		
+	}
+	 void checkInput() {
+		
+		System.out.println("Checkout");
+	}
+
+}
